@@ -1,0 +1,472 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="607.0" prefWidth="963.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.WarehouseManagerWindow">
+   <children>
+      <VBox alignment="CENTER" prefHeight="400.0" prefWidth="250.0" spacing="3.0" style="-fx-background-color: linear-gradient(#66FFFF,  #99CCFF);" HBox.hgrow="NEVER">
+         <children>
+            <Button alignment="CENTER" focusTraversable="false" maxHeight="50.0" maxWidth="250.0" minHeight="50.0" minWidth="250.0" mnemonicParsing="false" onAction="#showCompaniesPane" pickOnBounds="false" prefHeight="50.0" prefWidth="250.0" style="-fx-background-color: #000066;" text="Companies" textFill="WHITE">
+               <effect>
+                  <ColorAdjust />
+               </effect>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Button>
+            <Button alignment="CENTER" focusTraversable="false" maxHeight="50.0" maxWidth="250.0" minHeight="50.0" minWidth="250.0" mnemonicParsing="false" onAction="#showAddCompanyPane" pickOnBounds="false" prefHeight="50.0" prefWidth="250.0" style="-fx-background-color: #000066;" text="Add Company" textFill="WHITE">
+               <effect>
+                  <ColorAdjust />
+               </effect>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Button>
+            <Button alignment="CENTER" focusTraversable="false" maxHeight="50.0" maxWidth="250.0" minHeight="50.0" minWidth="250.0" mnemonicParsing="false" onAction="#showProductsPane" pickOnBounds="false" prefHeight="50.0" prefWidth="250.0" style="-fx-background-color: #000066;" text="Products" textFill="WHITE">
+               <effect>
+                  <ColorAdjust />
+               </effect>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </Button>
+            <Button alignment="CENTER" focusTraversable="false" layoutX="10.0" layoutY="289.0" maxHeight="50.0" maxWidth="250.0" minHeight="50.0" minWidth="250.0" mnemonicParsing="false" onAction="#showAddProductPane" pickOnBounds="false" prefHeight="50.0" prefWidth="250.0" style="-fx-background-color: #000066;" text="Add Product" textFill="WHITE">
+               <effect>
+                  <ColorAdjust />
+               </effect>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </Button>
+            <Button alignment="CENTER" focusTraversable="false" maxHeight="50.0" maxWidth="250.0" minHeight="50.0" minWidth="250.0" mnemonicParsing="false" onAction="#showSearchPane" pickOnBounds="false" prefHeight="50.0" prefWidth="250.0" style="-fx-background-color: #000066;" text="Search" textFill="WHITE">
+               <effect>
+                  <ColorAdjust />
+               </effect>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </Button>
+         </children>
+      </VBox>
+      <AnchorPane HBox.hgrow="ALWAYS">
+         <children>
+            <VBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="100.0" />
+            <BorderPane fx:id="blankPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="607.0" prefWidth="724.0" style="-fx-background-color: linear-gradient(#6684F9,  #0033FF);" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+            <BorderPane fx:id="companiesPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="607.0" prefWidth="724.0" style="-fx-background-color: linear-gradient(#6684F9,  #0033FF);" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <center>
+                  <ScrollPane maxHeight="1.7976931348623157E308" maxWidth="-Infinity" prefHeight="200.0" prefWidth="489.0" BorderPane.alignment="CENTER">
+                     <content>
+                        <BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="398.0" prefWidth="463.0">
+                           <center>
+                              <VBox fx:id="companiesShouldBeHere" alignment="TOP_CENTER" maxWidth="1.7976931348623157E308" prefHeight="398.0" prefWidth="469.0" spacing="10.0" BorderPane.alignment="CENTER" />
+                           </center>
+                        </BorderPane>
+                     </content>
+                     <BorderPane.margin>
+                        <Insets top="10.0" />
+                     </BorderPane.margin>
+                  </ScrollPane>
+               </center>
+               <top>
+                  <VBox alignment="CENTER" prefHeight="67.0" prefWidth="713.0" BorderPane.alignment="BOTTOM_CENTER">
+                     <children>
+                        <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="31.0" prefWidth="501.0" spacing="20.0" style="-fx-background-color: #66FFFF;">
+                           <children>
+                              <Label prefHeight="21.0" prefWidth="84.0" text="Companies: ">
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </Label>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="20.0" />
+                           </VBox.margin>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </top>
+            </BorderPane>
+            <BorderPane fx:id="productsPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="607.0" prefWidth="724.0" style="-fx-background-color: linear-gradient(#6684F9,  #0033FF);" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <center>
+                  <ScrollPane maxHeight="1.7976931348623157E308" maxWidth="-Infinity" prefHeight="200.0" prefWidth="489.0" BorderPane.alignment="CENTER">
+                     <content>
+                        <BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="398.0" prefWidth="463.0">
+                           <center>
+                              <VBox fx:id="productsShouldBeHere" alignment="TOP_CENTER" maxWidth="1.7976931348623157E308" prefHeight="398.0" prefWidth="469.0" spacing="10.0" BorderPane.alignment="CENTER" />
+                           </center>
+                        </BorderPane>
+                     </content>
+                     <BorderPane.margin>
+                        <Insets top="10.0" />
+                     </BorderPane.margin>
+                  </ScrollPane>
+               </center>
+               <top>
+                  <VBox alignment="CENTER" prefHeight="67.0" prefWidth="713.0" BorderPane.alignment="BOTTOM_CENTER">
+                     <children>
+                        <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="31.0" prefWidth="501.0" spacing="20.0" style="-fx-background-color: #66FFFF;">
+                           <children>
+                              <Label prefHeight="21.0" prefWidth="84.0" text="Products: ">
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </Label>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="20.0" />
+                           </VBox.margin>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </top>
+            </BorderPane>
+            <BorderPane fx:id="productsOfOneComPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="607.0" prefWidth="724.0" style="-fx-background-color: linear-gradient(#6684F9,  #0033FF);" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <bottom>
+                  <Button mnemonicParsing="false" onAction="#showCompaniesPane" prefHeight="31.0" prefWidth="52.0" style="-fx-background-color: #05073D;" text="back" textFill="WHITE" BorderPane.alignment="CENTER">
+                     <BorderPane.margin>
+                        <Insets bottom="10.0" />
+                     </BorderPane.margin>
+                  </Button>
+               </bottom>
+               <center>
+                  <ScrollPane maxHeight="1.7976931348623157E308" maxWidth="-Infinity" prefHeight="200.0" prefWidth="489.0" BorderPane.alignment="CENTER">
+                     <content>
+                        <BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="398.0" prefWidth="463.0">
+                           <center>
+                              <VBox fx:id="productsOfThisComShouldBeHere" alignment="TOP_CENTER" maxWidth="1.7976931348623157E308" prefHeight="398.0" prefWidth="469.0" spacing="10.0" BorderPane.alignment="CENTER" />
+                           </center>
+                        </BorderPane>
+                     </content>
+                     <BorderPane.margin>
+                        <Insets top="10.0" />
+                     </BorderPane.margin>
+                  </ScrollPane>
+               </center>
+               <top>
+                  <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="31.0" prefWidth="501.0" spacing="20.0" style="-fx-background-color: #66FFFF;" BorderPane.alignment="CENTER">
+                     <children>
+                        <Label fx:id="productsOfCompanyLabel" prefHeight="21.0" text="Products: ">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+               </top>
+            </BorderPane>
+            <BorderPane fx:id="addCompanyPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="607.0" prefWidth="724.0" style="-fx-background-color: linear-gradient(#6684F9,  #0033FF);" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <center>
+                  <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="547.0" prefWidth="500.0" spacing="15.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <Label textFill="WHITE">
+                           <padding>
+                              <Insets top="10.0" />
+                           </padding>
+                           <VBox.margin>
+                              <Insets left="100.0" right="100.0" />
+                           </VBox.margin>
+                        </Label>
+                        <TextField fx:id="companyNameTxtFld" maxWidth="-Infinity" prefWidth="180.0" promptText="company's naame">
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </TextField>
+                        <TextField fx:id="managerFirstnameTxtFld" maxWidth="-Infinity" prefWidth="180.0" promptText="manager's firstname">
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </TextField>
+                        <TextField fx:id="managerLastnameTxtFld" layoutX="190.0" layoutY="104.0" maxWidth="-Infinity" prefWidth="180.0" promptText="manager's lastname" />
+                        <TextField fx:id="addressTxtFld" promptText="address">
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </TextField>
+                        <TextField fx:id="numberTxtFld" maxWidth="-Infinity" prefWidth="180.0" promptText="numberTxtFld">
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </TextField>
+                        <ScrollPane maxHeight="1.7976931348623157E308" maxWidth="-Infinity" prefHeight="246.0" prefWidth="489.0">
+                           <content>
+                              <BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="398.0" prefWidth="463.0">
+                                 <center>
+                                    <VBox fx:id="employeesShouldBeHere" alignment="TOP_CENTER" maxWidth="1.7976931348623157E308" prefHeight="398.0" prefWidth="469.0" spacing="10.0" BorderPane.alignment="CENTER" />
+                                 </center>
+                              </BorderPane>
+                           </content>
+                        </ScrollPane>
+                     </children>
+                  </VBox>
+               </center>
+               <bottom>
+                  <Button alignment="CENTER" contentDisplay="TOP" mnemonicParsing="false" onAction="#addNewCompany" prefHeight="8.0" prefWidth="146.0" style="-fx-background-radius: 50; -fx-background-color: linear-gradient(#038749, #01C76B);" text="Finish" textFill="WHITE" BorderPane.alignment="CENTER">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                     <BorderPane.margin>
+                        <Insets bottom="10.0" />
+                     </BorderPane.margin>
+                  </Button>
+               </bottom>
+            </BorderPane>
+            <BorderPane fx:id="addProductPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="607.0" prefWidth="724.0" style="-fx-background-color: linear-gradient(#6684F9,  #0033FF);" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <center>
+                  <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="531.0" prefWidth="500.0" spacing="20.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <TextField fx:id="productName" maxWidth="-Infinity" prefWidth="150.0" promptText="Product Name">
+                           <VBox.margin>
+                              <Insets left="180.0" right="180.0" />
+                           </VBox.margin>
+                        </TextField>
+                        <MenuButton fx:id="selectCompany" alignment="CENTER" contentDisplay="CENTER" maxWidth="-Infinity" mnemonicParsing="false" prefWidth="140.0" style="-fx-background-color: #FFFFFF;" text="Company">
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </MenuButton>
+                        <TextField fx:id="productCode" maxWidth="-Infinity" prefWidth="150.0" promptText="Product Code">
+                           <VBox.margin>
+                              <Insets left="180.0" right="180.0" />
+                           </VBox.margin>
+                        </TextField>
+                        <DatePicker fx:id="selectExpireDate" maxWidth="-Infinity" prefHeight="31.0" prefWidth="140.0" promptText="Expire Date">
+                           <VBox.margin>
+                              <Insets left="100.0" right="100.0" />
+                           </VBox.margin>
+                        </DatePicker>
+                        <DatePicker fx:id="selectProduceDate" maxWidth="-Infinity" prefWidth="140.0" promptText="Produce Date" />
+                        <HBox alignment="CENTER" prefHeight="43.0" prefWidth="609.0" spacing="10.0">
+                           <VBox.margin>
+                              <Insets left="100.0" right="100.0" />
+                           </VBox.margin>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </center>
+               <bottom>
+                  <Button alignment="CENTER" contentDisplay="TOP" mnemonicParsing="false" onAction="#addNewProduct" prefHeight="8.0" prefWidth="146.0" style="-fx-background-radius: 50; -fx-background-color: linear-gradient(#038749, #01C76B);" text="Finish" textFill="WHITE" BorderPane.alignment="CENTER">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                     <BorderPane.margin>
+                        <Insets bottom="10.0" />
+                     </BorderPane.margin>
+                  </Button>
+               </bottom></BorderPane>
+            <BorderPane fx:id="searchPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="607.0" prefWidth="724.0" style="-fx-background-color: linear-gradient(#6684F9,  #0033FF);" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <bottom>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="160.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <Button alignment="CENTER" contentDisplay="TOP" mnemonicParsing="false" onAction="#searchBySelect" prefHeight="44.0" prefWidth="192.0" style="-fx-background-color: #05073D; -fx-background-radius: 50; -fx-background-color: linear-gradient(#038749, #01C76B);" text="Search" textFill="WHITE">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Button>
+                        <Button alignment="CENTER" contentDisplay="TOP" mnemonicParsing="false" onAction="#searchByType" prefHeight="44.0" prefWidth="192.0" style="-fx-background-color: #05073D; -fx-background-radius: 50; -fx-background-color: linear-gradient(#038749, #01C76B);" text="Search" textFill="WHITE">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </HBox>
+               </bottom>
+               <center>
+                  <HBox alignment="CENTER" prefHeight="526.0" prefWidth="713.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <VBox alignment="TOP_CENTER" maxHeight="1.7976931348623157E308" maxWidth="-Infinity" prefHeight="548.0" prefWidth="369.0" spacing="10.0" HBox.hgrow="ALWAYS">
+                           <children>
+                              <GridPane alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="40.0" prefWidth="368.0">
+                                 <children>
+                                    <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="21.0" prefWidth="185.0" text="Select A Company" textFill="WHITE" />
+                                    <MenuButton fx:id="searchMenuButton" mnemonicParsing="false" prefHeight="31.0" prefWidth="173.0" text="Company" GridPane.columnIndex="1" />
+                                 </children>
+                                 <columnConstraints>
+                                    <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                              </GridPane>
+                              <Label text="Click on their names to see more details" />
+                              <ScrollPane maxHeight="1.7976931348623157E308" maxWidth="-Infinity" prefHeight="443.0" prefWidth="226.0" VBox.vgrow="ALWAYS">
+                                 <content>
+                                    <VBox fx:id="searchedProducts" alignment="TOP_CENTER" prefHeight="514.0" prefWidth="205.0" spacing="5.0">
+                                       <children>
+                                          <HBox alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="51.0" prefWidth="205.0" style="-fx-border-color: #006600;">
+                                             <children>
+                                                <Button mnemonicParsing="false" prefHeight="37.0" prefWidth="150.0" style="-fx-border-color: #006600; -fx-background-color: #E5FFCC;" text="product" />
+                                             </children>
+                                          </HBox>
+                                          <HBox alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="51.0" prefWidth="205.0" style="-fx-border-color: #006600;">
+                                             <children>
+                                                <Button mnemonicParsing="false" prefHeight="37.0" prefWidth="150.0" style="-fx-border-color: #006600; -fx-background-color: #E5FFCC;" text="product" />
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                       <padding>
+                                          <Insets top="5.0" />
+                                       </padding>
+                                    </VBox>
+                                 </content>
+                              </ScrollPane>
+                           </children>
+                        </VBox>
+                        <VBox alignment="TOP_CENTER" maxHeight="1.7976931348623157E308" maxWidth="-Infinity" prefHeight="543.0" prefWidth="346.0" spacing="10.0" HBox.hgrow="ALWAYS">
+                           <children>
+                              <TextField fx:id="nameSearchTxtFld" maxWidth="-Infinity" prefHeight="31.0" prefWidth="266.0" promptText="type product or company name" />
+                              <Label text="Click on their names to see more details" />
+                              <ScrollPane maxHeight="1.7976931348623157E308" maxWidth="-Infinity" prefHeight="443.0" prefWidth="226.0" VBox.vgrow="ALWAYS">
+                                 <content>
+                                    <VBox fx:id="searchByTypePane" alignment="TOP_CENTER" prefHeight="514.0" prefWidth="205.0" spacing="5.0">
+                                       <padding>
+                                          <Insets top="5.0" />
+                                       </padding>
+                                    </VBox>
+                                 </content>
+                              </ScrollPane>
+                           </children>
+                        </VBox>
+                     </children>
+                     <BorderPane.margin>
+                        <Insets top="20.0" />
+                     </BorderPane.margin>
+                  </HBox>
+               </center>
+            </BorderPane>
+            <BorderPane fx:id="editProductDetailPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="607.0" prefWidth="724.0" style="-fx-background-color: linear-gradient(#6684F9,  #0033FF);" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <bottom>
+                  <Button mnemonicParsing="false" onAction="#saveProductEdit" prefHeight="31.0" prefWidth="52.0" style="-fx-background-color: #00FF00;" text="Save" BorderPane.alignment="CENTER">
+                     <BorderPane.margin>
+                        <Insets bottom="10.0" />
+                     </BorderPane.margin>
+                  </Button>
+               </bottom>
+               <center>
+                  <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="500.0" prefWidth="500.0" spacing="30.0" style="-fx-background-color: #00FFFF;" BorderPane.alignment="CENTER">
+                     <children>
+                        <ImageView fx:id="productImage1" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+                        <TextField fx:id="editProductName" maxWidth="-Infinity" prefWidth="150.0" />
+                        <TextField fx:id="editProductCode" maxWidth="-Infinity" prefWidth="150.0" />
+                        <MenuButton fx:id="companyOfProductMEnuButton" mnemonicParsing="false" prefHeight="31.0" prefWidth="173.0" text="Company" />
+                        <DatePicker fx:id="editExpireDate" promptText="Tap to edit expire date" />
+                        <DatePicker fx:id="editProduceDate" promptText="Tap to edit produce date" />
+                     </children>
+                  </VBox>
+               </center>
+            </BorderPane>
+            <BorderPane fx:id="oneProductsDetailPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="607.0" prefWidth="724.0" style="-fx-background-color: linear-gradient(#6684F9,  #0033FF);" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <bottom>
+                  <Button mnemonicParsing="false" onAction="#showProductsPane" prefHeight="31.0" prefWidth="52.0" style="-fx-background-color: #05073D;" text="back" textFill="WHITE" BorderPane.alignment="CENTER">
+                     <BorderPane.margin>
+                        <Insets bottom="10.0" />
+                     </BorderPane.margin>
+                  </Button>
+               </bottom>
+               <center>
+                  <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="500.0" prefWidth="500.0" spacing="30.0" style="-fx-background-color: #00FFFF;" BorderPane.alignment="CENTER">
+                     <children>
+                        <ImageView fx:id="productImage" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+                        <Label fx:id="productNameLabel" text="procucts code" />
+                        <Label fx:id="productCodeLabel" text="code" />
+                        <Label fx:id="expireDateLabel" text="expire date" />
+                        <Label fx:id="produceDateLabel" text="produceDate" />
+                        <Button mnemonicParsing="false" onAction="#showProductEditPane" prefHeight="31.0" prefWidth="52.0" style="-fx-background-color: #99FFCC;" text="Edit" />
+                     </children>
+                  </VBox>
+               </center>
+            </BorderPane>
+            <BorderPane fx:id="companyDetailPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="607.0" prefWidth="724.0" style="-fx-background-color: linear-gradient(#6684F9,  #0033FF);" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <bottom>
+                  <Button mnemonicParsing="false" onAction="#showCompaniesPane" prefHeight="31.0" prefWidth="52.0" style="-fx-background-color: #05073D;" text="back" textFill="WHITE" BorderPane.alignment="CENTER">
+                     <BorderPane.margin>
+                        <Insets bottom="10.0" />
+                     </BorderPane.margin>
+                  </Button>
+               </bottom>
+               <center>
+                  <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="551.0" prefWidth="500.0" spacing="30.0" style="-fx-background-color: #00FFFF;" BorderPane.alignment="CENTER">
+                     <children>
+                        <ImageView fx:id="companyImage" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+                        <Label fx:id="companyNameLabel" text="company name" />
+                        <Label fx:id="managerNameLabel" text="manager firstname" />
+                        <Label fx:id="addressLabel" text="company address" />
+                        <Label fx:id="phoneNumberLabel" text="company phone numeber" />
+                        <Button mnemonicParsing="false" onAction="#showCompanyEditPane" prefHeight="31.0" prefWidth="52.0" style="-fx-background-color: #99FFCC;" text="Edit" />
+                        <ScrollPane maxHeight="1.7976931348623157E308" maxWidth="-Infinity" prefHeight="200.0" prefWidth="489.0">
+                           <content>
+                              <BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="398.0" prefWidth="463.0">
+                                 <center>
+                                    <VBox fx:id="employeesOfThisComShouldBeHere" alignment="TOP_CENTER" maxWidth="1.7976931348623157E308" prefHeight="200.0" prefWidth="469.0" spacing="10.0" BorderPane.alignment="CENTER" />
+                                 </center>
+                              </BorderPane>
+                           </content>
+                        </ScrollPane>
+                     </children>
+                  </VBox>
+               </center>
+            </BorderPane>
+            <BorderPane fx:id="editCompanyDetailPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="607.0" prefWidth="724.0" style="-fx-background-color: linear-gradient(#6684F9,  #0033FF);" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <center>
+                  <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="551.0" prefWidth="500.0" spacing="30.0" style="-fx-background-color: #00FFFF;" BorderPane.alignment="CENTER">
+                     <children>
+                        <ImageView fx:id="companyImage1" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Label prefHeight="21.0" prefWidth="127.0" text="Company's Name: " />
+                              <TextField fx:id="editCompanyName" maxWidth="-Infinity" prefWidth="150.0" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Label prefHeight="21.0" prefWidth="155.0" text="Manager's Firstname:" />
+                              <TextField fx:id="editCompanyManagerFirstname" maxWidth="-Infinity" prefHeight="31.0" prefWidth="152.0" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Label prefHeight="21.0" prefWidth="155.0" text="Manager's Lasttname:" />
+                              <TextField fx:id="editCompanyManagerLastname" maxWidth="-Infinity" prefHeight="31.0" prefWidth="152.0" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Label prefHeight="21.0" prefWidth="63.0" text="Address:" />
+                              <TextField fx:id="editCompanyAddress" maxWidth="-Infinity" prefHeight="31.0" prefWidth="450.0" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Label prefHeight="21.0" prefWidth="63.0" text="Number:" />
+                              <TextField fx:id="editCompanyNumber" maxWidth="-Infinity" prefWidth="150.0" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </center>
+               <bottom>
+                  <Button mnemonicParsing="false" onAction="#saveCompanyEdit" prefHeight="31.0" prefWidth="52.0" style="-fx-background-color: #00FF00;" text="Save" BorderPane.alignment="CENTER">
+                     <BorderPane.margin>
+                        <Insets bottom="10.0" />
+                     </BorderPane.margin>
+                  </Button>
+               </bottom>
+            </BorderPane>
+         </children>
+      </AnchorPane>
+   </children>
+</HBox>

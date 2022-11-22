@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="607.0" prefWidth="963.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.DoctorWindow">
+   <children>
+      <VBox prefHeight="400.0" prefWidth="250.0" spacing="3.0" style="-fx-background-color: linear-gradient(#66FFFF,  #99CCFF);" HBox.hgrow="NEVER">
+         <children>
+            <GridPane alignment="CENTER" prefHeight="179.0" prefWidth="250.0" style="-fx-background-color: #CCFFCC;">
+               <children>
+                  <ImageView fx:id="doctorImageView" fitHeight="130.0" fitWidth="134.0" pickOnBounds="true" preserveRatio="true" />
+                  <Label fx:id="doctorNameLabel" text="doctor's name" GridPane.columnIndex="1" />
+                  <Button fx:id="logoutButton" mnemonicParsing="false" onAction="#logoutButtonPressed" prefHeight="25.0" prefWidth="75.0" style="-fx-background-color: linear-gradient(#A80000,#B95050); -fx-background-radius: 50;" text="Log out" textFill="WHITE" GridPane.hgrow="NEVER" GridPane.rowIndex="1" GridPane.vgrow="NEVER">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                  </Button>
+               </children>
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="156.0" minWidth="10.0" prefWidth="130.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="114.0" minWidth="10.0" prefWidth="113.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints maxHeight="138.0" minHeight="10.0" prefHeight="136.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="44.0" minHeight="0.0" prefHeight="16.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+            </GridPane>
+            <Button fx:id="homePageButton" alignment="CENTER" focusTraversable="false" maxHeight="50.0" maxWidth="250.0" minHeight="50.0" minWidth="250.0" mnemonicParsing="false" onAction="#showHomePagePane" pickOnBounds="false" prefHeight="50.0" prefWidth="250.0" style="-fx-background-color: #000066;" text="Home Page" textFill="WHITE">
+               <effect>
+                  <ColorAdjust />
+               </effect>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <VBox.margin>
+                  <Insets top="80.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="bioButton" alignment="CENTER" focusTraversable="false" layoutX="10.0" layoutY="223.0" maxHeight="50.0" maxWidth="250.0" minHeight="50.0" minWidth="250.0" mnemonicParsing="false" onAction="#showBioPane" pickOnBounds="false" prefHeight="50.0" prefWidth="250.0" style="-fx-background-color: #000066;" text="Your bio" textFill="WHITE">
+               <effect>
+                  <ColorAdjust />
+               </effect>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </Button>
+            <Button fx:id="examRequestButton" alignment="CENTER" focusTraversable="false" maxHeight="50.0" maxWidth="250.0" minHeight="50.0" minWidth="250.0" mnemonicParsing="false" onAction="#showExamRequestsPane" pickOnBounds="false" prefHeight="50.0" prefWidth="250.0" style="-fx-background-color: #000066;" text="Emamination requests" textFill="WHITE">
+               <effect>
+                  <ColorAdjust />
+               </effect>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="messagesButton" alignment="CENTER" focusTraversable="false" maxHeight="50.0" maxWidth="250.0" minHeight="50.0" minWidth="250.0" mnemonicParsing="false" onAction="#showMessagesPane" pickOnBounds="false" prefHeight="50.0" prefWidth="250.0" style="-fx-background-color: #000066;" text="Messages from patients" textFill="WHITE">
+               <effect>
+                  <ColorAdjust />
+               </effect>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="postButton" alignment="CENTER" focusTraversable="false" maxHeight="50.0" maxWidth="250.0" minHeight="50.0" minWidth="250.0" mnemonicParsing="false" onAction="#showPostPane" pickOnBounds="false" prefHeight="50.0" prefWidth="250.0" style="-fx-background-color: #000066;" text="Share medical posts" textFill="WHITE">
+               <effect>
+                  <ColorAdjust />
+               </effect>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </Button>
+         </children>
+      </VBox>
+      <AnchorPane HBox.hgrow="ALWAYS">
+         <children>
+            <VBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="100.0" />
+            <BorderPane fx:id="homePagePane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="607.0" prefWidth="724.0" style="-fx-background-color: linear-gradient(#6684F9,  #0033FF);" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <top>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="51.0" prefWidth="372.0" style="-fx-background-color: #000000;" text="Home Page" textFill="WHITE" BorderPane.alignment="CENTER">
+                     <BorderPane.margin>
+                        <Insets top="50.0" />
+                     </BorderPane.margin>
+                  </Label>
+               </top>
+            </BorderPane>
+            <BorderPane fx:id="examRequestPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="607.0" prefWidth="724.0" style="-fx-background-color: linear-gradient(#6684F9,  #0033FF);" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <top>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="51.0" prefWidth="372.0" style="-fx-background-color: #000000;" text="Requests:" textFill="WHITE" BorderPane.alignment="CENTER">
+                     <BorderPane.margin>
+                        <Insets top="50.0" />
+                     </BorderPane.margin>
+                  </Label>
+               </top>
+               <center>
+                  <VBox alignment="CENTER" spacing="10.0">
+                     <children>
+                        <Label text="Unread requests" textFill="WHITE" />
+                        <ScrollPane maxWidth="-Infinity" prefHeight="200.0" prefWidth="520.0">
+                           <content>
+                              <BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="200.0">
+                                 <center>
+                                    <VBox fx:id="unreadRequestPane" alignment="TOP_CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="200.0" spacing="10.0" BorderPane.alignment="CENTER" />
+                                 </center>
+                              </BorderPane>
+                           </content>
+                        </ScrollPane>
+                        <Label text="Read requests" textFill="WHITE">
+                           <VBox.margin>
+                              <Insets top="20.0" />
+                           </VBox.margin>
+                        </Label>
+                        <ScrollPane layoutX="117.0" layoutY="148.0" maxWidth="-Infinity" prefHeight="200.0" prefWidth="520.0">
+                           <content>
+                              <BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="200.0">
+                                 <center>
+                                    <VBox fx:id="readRequestPane" alignment="TOP_CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="200.0" spacing="10.0" BorderPane.alignment="CENTER" />
+                                 </center>
+                              </BorderPane>
+                           </content>
+                        </ScrollPane>
+                     </children>
+                     <BorderPane.margin>
+                        <Insets bottom="40.0" top="10.0" />
+                     </BorderPane.margin>
+                  </VBox>
+               </center>
+            </BorderPane>
+            <BorderPane fx:id="yetblank" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="607.0" prefWidth="713.0" style="-fx-background-color: linear-gradient(#6684F9,  #0033FF);" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <top>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="51.0" prefWidth="372.0" style="-fx-background-color: #000000;" text="The patient's profile" textFill="WHITE" BorderPane.alignment="CENTER">
+                     <BorderPane.margin>
+                        <Insets top="50.0" />
+                     </BorderPane.margin>
+                  </Label>
+               </top>
+               <center>
+                  <BorderPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                     <center>
+                        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER" />
+                     </center>
+                     <BorderPane.margin>
+                        <Insets top="20.0" />
+                     </BorderPane.margin>
+                  </BorderPane>
+               </center>
+            </BorderPane>
+            <BorderPane fx:id="detailsPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="607.0" prefWidth="724.0" style="-fx-background-color: linear-gradient(#6684F9,  #0033FF);" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <center>
+                  <BorderPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                     <center>
+                        <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="500.0" prefWidth="500.0" spacing="30.0" style="-fx-background-color: #00FFFF;" BorderPane.alignment="CENTER">
+                           <children>
+                              <ImageView fx:id="patientsImage" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+                              <Label fx:id="patientsName" text="Patient's name" />
+                              <Label fx:id="patientsGender" text="gender" />
+                              <Label fx:id="patientsAge" text="age: " />
+                              <Label fx:id="patientsWeight" text="weight" />
+                           </children>
+                        </VBox>
+                     </center>
+                  </BorderPane>
+               </center>
+               <bottom>
+                  <Button mnemonicParsing="false" onAction="#gobackFromDetail" prefHeight="31.0" prefWidth="52.0" style="-fx-background-color: #05073D;" text="back" textFill="WHITE" BorderPane.alignment="CENTER">
+                     <BorderPane.margin>
+                        <Insets bottom="10.0" />
+                     </BorderPane.margin>
+                  </Button>
+               </bottom>
+            </BorderPane>
+            <BorderPane fx:id="bioPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="607.0" prefWidth="724.0" style="-fx-background-color: linear-gradient(#6684F9,  #0033FF);" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="10.0">
+               <center>
+                  <BorderPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                     <center>
+                        <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="500.0" prefWidth="500.0" spacing="10.0" style="-fx-background-color: #00FFFF;" BorderPane.alignment="CENTER">
+                           <children>
+                              <ImageView fx:id="doctorImage" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+                              <Label fx:id="doctorNameLabel2" text="Doctor's name" />
+                              <Label fx:id="genderLabel" text="gender" />
+                              <Label fx:id="doctorAgeLabel" text="age: " />
+                              <Label fx:id="specializationLabel" text="Specialization" />
+                              <Label fx:id="doctorWeightLabel" text="weight" />
+                              <Label fx:id="medLicLabel" text="med licence nom" />
+                              <TextArea fx:id="bioTextArea" prefHeight="200.0" prefWidth="200.0" promptText="Type your bio..." />
+                           </children>
+                        </VBox>
+                     </center>
+                  </BorderPane>
+               </center>
+               <bottom>
+                  <Button mnemonicParsing="false" onAction="#saveBio" prefHeight="31.0" prefWidth="52.0" style="-fx-background-color: #05073D;" text="Save" textFill="WHITE" BorderPane.alignment="CENTER">
+                     <BorderPane.margin>
+                        <Insets bottom="10.0" />
+                     </BorderPane.margin>
+                  </Button>
+               </bottom>
+            </BorderPane>
+            <BorderPane fx:id="postPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="607.0" prefWidth="724.0" style="-fx-background-color: linear-gradient(#6684F9,  #0033FF);" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <top>
+                  <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="212.0" prefWidth="451.0" spacing="10.0" BorderPane.alignment="CENTER">
+                     <BorderPane.margin>
+                        <Insets top="20.0" />
+                     </BorderPane.margin>
+                     <children>
+                        <TextArea fx:id="newPostTextArea" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="131.0" prefWidth="339.0" promptText="Type in a new post...." />
+                        <Button mnemonicParsing="false" onAction="#pressedShare" style="-fx-background-color: #009900;" text="Share" textFill="WHITE" />
+                        <Label text="Posts you shared till now: " textFill="WHITE">
+                           <VBox.margin>
+                              <Insets top="5.0" />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                  </VBox>
+               </top>
+               <center>
+                  <ScrollPane maxHeight="1.7976931348623157E308" maxWidth="-Infinity" prefHeight="200.0" prefWidth="489.0" BorderPane.alignment="CENTER">
+                     <content>
+                        <BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="398.0" prefWidth="463.0">
+                           <center>
+                              <VBox fx:id="sharePostpane" alignment="TOP_CENTER" maxWidth="1.7976931348623157E308" prefHeight="200.0" spacing="10.0" BorderPane.alignment="CENTER">
+                                 <children>
+                                    <HBox alignment="CENTER" prefHeight="100.0" prefWidth="400.0" spacing="20.0">
+                                       <children>
+                                          <Label alignment="TOP_LEFT" prefHeight="100.0" prefWidth="292.0" style="-fx-background-color: #E5FFCC;" text="postContentLabel" />
+                                          <Label fx:id="doctorNameLabel3" style="-fx-background-color: #E5FFCC;" text="by : doctor name" />
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                           </center>
+                        </BorderPane>
+                     </content>
+                     <BorderPane.margin>
+                        <Insets bottom="20.0" />
+                     </BorderPane.margin>
+                  </ScrollPane>
+               </center></BorderPane>
+            <BorderPane fx:id="messagesPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="607.0" prefWidth="724.0" style="-fx-background-color: linear-gradient(#6684F9,  #0033FF);" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <center>
+                  <ScrollPane maxHeight="1.7976931348623157E308" maxWidth="-Infinity" prefHeight="200.0" prefWidth="489.0" BorderPane.alignment="CENTER">
+                     <content>
+                        <BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="398.0" prefWidth="463.0">
+                           <center>
+                              <VBox fx:id="questionsPane" alignment="TOP_CENTER" maxWidth="1.7976931348623157E308" prefHeight="398.0" prefWidth="469.0" spacing="10.0" BorderPane.alignment="CENTER" />
+                           </center>
+                        </BorderPane>
+                     </content>
+                     <BorderPane.margin>
+                        <Insets top="10.0" />
+                     </BorderPane.margin>
+                  </ScrollPane>
+               </center>
+               <top>
+                  <VBox alignment="CENTER" prefHeight="122.0" prefWidth="734.0" BorderPane.alignment="BOTTOM_CENTER">
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="47.0" prefWidth="544.0" style="-fx-background-color: #000000;" text="Questions asked from you:(only questions you haven't answered are shown)" textFill="WHITE">
+                           <VBox.margin>
+                              <Insets top="20.0" />
+                           </VBox.margin>
+                        </Label>
+                        <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="31.0" prefWidth="501.0" spacing="20.0" style="-fx-background-color: #66FFFF;">
+                           <children>
+                              <Label prefHeight="21.0" prefWidth="179.0" text="Question:" />
+                              <Label prefHeight="21.0" prefWidth="269.0" text="Type your answer: in the column below:">
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </Label>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="20.0" />
+                           </VBox.margin>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </top>
+            </BorderPane>
+         </children>
+      </AnchorPane>
+   </children>
+</HBox>

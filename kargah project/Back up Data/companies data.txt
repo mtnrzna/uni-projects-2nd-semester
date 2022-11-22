@@ -1,0 +1,3 @@
+Microsoft$California$Bill Gates$1234$
+Google$New York$Sundar Pichai$897$
+Tesla$Vancouver$Elon Musk$79$

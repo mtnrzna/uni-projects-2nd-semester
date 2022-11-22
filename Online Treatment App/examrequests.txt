@@ -1,0 +1,11 @@
+Albert Einstein$Nikola Tesla$Doctor shanbe matab baze? :/$hi$null$true$
+Marie Curie$Nikola Tesla$zende mimoonam? :/$salam doctor$are koshti marooooooooo$true$
+Niels Bohr$Nikola Tesla$hi i feel a bit sick$hello$null$true$
+Richard Feynman$Nikola Tesla$doc i have headache!$headache$null$true$
+Niels Bohr$Nikola Tesla$my stomache ache doc, is it corona?$corona?$null$true$
+Marie Curie$Nikola Tesla$wuz up doc$hi$null$true$
+Sigmund Freud$Kip Thorne$It's been four yours and i still have a bad headache$don't know$null$false$
+Marie Curie$Kip Thorne$what's up?$hey marie$null$true$
+Sigmund Freud$Phoebe Buffay$hi doctor Freud!$hello$null$false$
+Albert Einstein$Nikola Tesla$vvdfvdfvd$nmbdbv$null$false$
+Sheldon Cooper$Nikola Tesla$ndfdsfnmdsfmnds$hjdsbghjdbf$null$true$

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="80.0" prefWidth="538.0" style="-fx-background-color: #CCFFFF;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.PopupWithYesNo">
+   <children>
+      <Label fx:id="label" alignment="CENTER" contentDisplay="CENTER" prefHeight="25.0" prefWidth="463.0" text="Label">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <HBox alignment="BOTTOM_CENTER" prefHeight="100.0" prefWidth="200.0" spacing="50.0">
+         <children>
+            <Button fx:id="noButton" mnemonicParsing="false" onAction="#clickedNo" style="-fx-background-radius: 0; -fx-background-color: #00FFFF;" text="No" textFill="#1000ff" />
+            <Button fx:id="yesButton" mnemonicParsing="false" onAction="#clickedYes" style="-fx-background-radius: 0; -fx-background-color: #00FFFF;" text="Yes" textFill="#1000ff" />
+         </children>
+         <padding>
+            <Insets bottom="10.0" />
+         </padding>
+      </HBox>
+   </children>
+</VBox>

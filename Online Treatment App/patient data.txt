@@ -1,0 +1,8 @@
+Nikola$Tesla$nikola@gmail.com$1111$1856-07-15$MALE$70.0$
+Kip$Thorne$kip@gmail.com$1234$1942-08-05$MALE$80.0$
+Albert$Camus$albertcam@gmail.com$1234$1913-07-20$MALE$65.0$
+Walter$White$ww@gmail.com$1234$1955-07-20$MALE$70.0$
+Jon$Snow$jon@gmail.com$1234$1990-07-13$MALE$70.0$
+Sansa$Stark$sansa@gmail.com$1234$1997-07-06$FEMALE$60.0$
+Phoebe$Buffay$phoebe@gmail.com$1234$1970-07-20$FEMALE$55.0$
+Barney$Stinson$barney@gmail.com$1234$1980-07-14$MALE$70.0$

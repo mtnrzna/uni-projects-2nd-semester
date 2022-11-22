@@ -1,0 +1,12 @@
+Richard$Feynman$richard@gmail.com$1234$1918-04-03$MALE$70.0$NEUROLOGY$798$null$
+Marie$Curie$marie@gmail.com$1234$1867-12-29$FEMALE$60.0$UROLOGY$565$hey $
+Niels$Bohr$niels@gmail.com$1234$1885-08-05$MALE$60.0$CARDIOLOGY$89$best doctor!! ze best of allz!!$
+Albert$Einstein$alber@gmail.com$1234$1879-05-12$MALE$80.0$INTERNAL_MEDICINE$777994$null$
+Jean-Paul$Sartre$jean@gmail.com$1234$1905-06-23$MALE$79.0$PEDIATRICS$7985$null$
+Sigmund$Freud$sigmund@gmail.com$1234$1856-07-31$MALE$70.0$NEUROLOGY$144$null$
+Carl$Sagan$carl@gmail.com$1234$1934-07-13$MALE$80.0$NEPHROLOGY$45661$null$
+Michael$Scott$michael@gmail.com$1233$1965-07-07$MALE$80.0$ORTHOPEDICS$90$null$
+Sheldon$Cooper$shelli@gmail.com$1234$1985-07-15$MALE$60.0$DERMATOLOGY$89$jhgjjhjh$
+Chandler$Bing$chanchanman@gmail.com$1234$1970-07-29$MALE$80.0$PHYSICAL_THERAPY$20$null$
+Dwight$Schrute$dwight@gmail.com$1234$1980-07-15$MALE$90.0$OTHERS$98$null$
+Gus$Fring$hus@gmail.com$1234$1960-07-29$MALE$80.0$CARDIOLOGY$4444$null$
